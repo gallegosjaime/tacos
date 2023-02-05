@@ -1,10 +1,19 @@
+:root{
+    /*Colores*/
+    --Durazno: blanchedalmond;
+    --AmarilloPastel: #f5fac1;
+    --VerdeMilitar: #71711d;
+}
+
 body{
     margin: 0;
+    font-family:Georgia;
 }
 nav{
-    background-color: rgb(204, 204, 204);
+    background-color: blanchedalmond;
     width: 100%;
     height: 60px;
+    position:fixed;
 }
 nav span{
     margin-left: 10px;
@@ -14,39 +23,51 @@ nav span{
 nav div{
     display: inline-block;
 }
+a, ul{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+
+}
+.logo{
+    width: 60px;
+}
 .login{
     float: right;
     margin: auto;
     padding: 20px;
 }
+
 .slider{
     width: 100%;
     height: 91vh;
-    background-color: blanchedalmond;
+    background-color: rgb(255, 255, 255);
     text-align: center;
     font-size: 50px;
-    margin-bottom: 20px;
+    background-image: url('../images/sample.png');
 }
 .buscador{
     width: 97%;
     height: 30px;
-    border: 2px solid black;
+    border: 1px solid black;
     margin: auto;
     margin-bottom: 30px;
 }
 .content{
     width: 97%;
     height: 400px;
-    background-color: cornflowerblue;
+    background-color: #f5fac1;
     margin: auto;
     font-size: 50px;
     margin-bottom: 30px;
 }
 footer{
     width: 100%;
-    height: 100px;
-    background-color: chocolate;
+    height: 200px;
+    background-color:#71711d;
+
 }
 footer span{
     display: block;
+    color: white;
 }
