@@ -4,34 +4,172 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tacos</title>
     <Link rel="stylesheet" href="css/styles.css"></Link>
+    <Link rel="stylesheet" href="css/style2.css"></Link>
 </head>
 <body>
     <nav>
-        <span><a href="index.html"><img class="logo" src="images/logo.jpg"></a></span>
-        <div>
-            <ul>
-                <li><a href="pages/sobreNosotros.html">Sobre nosotros</a></li>
-                <li><a href="pages/comentarios.html">Comentarios</a></li>
-            </ul>
-        </div>
-        <span><a href="pages/promociones.html">Promociones</a></span>
+        <a href="index.html"><img class="logo" src="images/logo.jpg"></a>
+        <span class="about"><a href="pages/sobreNosotros.html">Sobre nosotros</a></span>
+        <span><a href="pages/comentarios.html">Comentarios</a></span>
         <span class="login"><a href="pages/login.html">Iniciar Sesión</a></span>
     </nav>
+    <div class="chatbot_container" id="ct_container" >
+        <header onclick="hide()" title="Minimizar chatbot">
+            <img class="chatbot_icon" src="images/chatbot_icon.png"><span>Chatbot</span><img class="chatbot_hide" id="close_chatbot" src="images/down_icon.png">
+        </header>
+        <div class="chatbot_howtoanswer" >
+            <span>Escribe <span id="cb_wta">el número</span> para reponder</span>
+        </div>
+        <div class="chatbot" id="chatbot">
+            <div class="chatbot_bot_ans">
+                <span>¿Hola en qué puedo ayudarte?</span>
+                <span>1.- Dudas generales</span>
+                <span>2.- Dudas de compra</span>
+                <span>3.- Formas de contacto</span>
+            </div>
+        </div>
+        <div class="chatbot_send" id="ct_send">
+            <input type="text" id="chatbot_msgsent"><button onclick="chatbot_send()">></button>
+        </div>
+    </div>
 
-    <div class="slider">
-       
+    <div style="align-items: center; padding-top: 80px;">
+        <div class="container">
+            <ul class="slider">
+              <li id="slide1">
+                <img src="images/logo.jpg"/>
+                <div class="centrado">Taco'miendo</div>
+              </li>
+              <li id="slide2">
+                <img src="images/papa2.jpg"/>
+                <div class="centrado">una orden de papas con</div>
+                <div class="centrado2">cada orden (valido jueves y viernes)</div>
+              </li>
+              <li id="slide3">
+                <img src="images/bistec.jpg"/>
+                <div class="centrado">Orden de bistec a mitad de</div>
+                <div class="centrado2">precio todos los miercoles</div>
+
+              </li>
+            </ul>
+            <ul class="menu">
+              <li>
+                <a href="#slide1">1</a>
+              </li>
+              <li>
+                <a href="#slide2">2</a>
+              </li>
+               <li>
+                <a href="#slide3">3</a>
+              </li>
+            </ul>
+            
+          </div>
     </div>
-    <div class="buscador">
-        Buscador
-    </div>
-    <div class="content">
-        CONTENIDO
+    <div>
+        <section class="wrap">
+            <h2 style="color: aliceblue; font-size: 55px;">Menú</h2>
+            <div class="column-3 columns">
+              <div class="menu-restaurante" style="background: center;background-size: cover;">
+                <h3>Menú Martes a Viernes</h3>
+                <hr>
+                <h4>Platos</h4>
+                <img src="images/bistec.jpg" alt="Team" style="height: 200px; width: 200px; align-self: center;">
+                <p>Orden de tacos de bisteck.</p>
+                <img src="images/trompo.jpg" alt="Team" style="height: 200px; width: 200px; align-self: center;">
+                <p>Orden de tacos de trompo.</p>
+                <img src="images/gringa.jpg" alt="Team" style="height: 200px; width: 200px; align-self: center;">
+                <p>Gringa.</p>
+                <img src="images/pirata.jpg" alt="Team" style="height: 200px; width: 200px; align-self: center;">
+                <p>Pirata.</p>
+                <img src="images/burrito.jpg" alt="Team" style="height: 200px; width: 200px; align-self: center;">
+                <p>Burrito.</p>
+                <img src="images/hamburgesa.jpg" alt="Team" style="height: 200px; width: 200px; align-self: center;">
+                <p>Hamburguesa.</p>
+                <br>
+                <p class="precio-menu">
+                  Precio:
+                  <span>$45 c/u</span>
+                </p>
+              </div>
+              <div class="menu-restaurante" style="background: center;background-size: cover;">
+                <h3>Menú fin de semana</h3>
+                <hr>
+                <h4>Tacos</h4>
+                <img src="images/barbacoa.jpg" alt="Team" style="height: 200px; width: 200px; align-self: center;">
+                <p>Orden de tacos de barbacoa.</p>
+                <img src="images/canasta.jpg" alt="Team" style="height: 200px; width: 200px; align-self: center;">
+                <p>Orden de  tacos de canasta.</p>
+                <img src="images/enchiladas.jpg" alt="Team" style="height: 200px; width: 200px; align-self: center;">
+                <p>Orden de Enchiladas.</p>
+                <img src="images/flautas.jpg" alt="Team" style="height: 200px; width: 200px; align-self: center;">
+                <p>Orden de  flautas.</p>
+                <br>
+                <p class="precio-menu">
+                  Precio:
+                  <span>$50 c/u</span>
+                </p>
+              </div>
+              <div class="menu-restaurante" style="background: center;background-size: cover;">
+                <h3>Acompañamientos</h3>
+                <hr>
+                <h4></h4>
+                <img src="images/coca.jpg" alt="Team" style="height: 200px; width: 200px; align-self: center;">
+                <p>Coca.</p>
+                <img src="images/agua.jpg" alt="Team" style="height: 200px; width: 200px; align-self: center;">
+                <p>Aguas de sabor.</p>
+                <img src="images/papa.jpg" alt="Team" style="height: 200px; width: 200px; align-self: center;">
+                <p>Orden de  papas de galeana.</p>
+                <img src="images/aros.jpg" alt="Team" style="height: 200px; width: 200px; align-self: center;">
+                <p>Orden de  aros de cebolla.</p>
+                <p class="precio-menu">
+                  Precio:
+                  <span>$30 c/u</span>
+                </p>
+              </div>
+            </div>
+          </section>
     </div>
     <footer>
-        <span>Contacto:</span>
-        <span>Mapa del sitio</span>
+        <div class="footer_content">
+            <div class="footer_content_box">
+                <header>CONTACTO</header>
+                <div>
+                    <span><img src="images/email_icon.png" alt="">sample@sample.com</span>
+                    <span><img src="images/phone_icon.png" alt="">81123456789</span>
+                    <span><img src="images/phone_icon.png" alt="">81323456429</span>
+                </div>
+            </div>
+            <div class="footer_content_box">
+                <header>REDES SOCIALES</header>
+                <div>
+                    <span><img src="images/facebook_icon.png" alt=""><a href="https://www.facebook.com/">Facebook</a></span>
+                    <span><img src="images/instagram_icon.png" alt=""><a href="https://www.instagram.com/">Instagram</a></span>
+                    <span><img src="images/twitter_icon.png" alt=""><a href="https://twitter.com/">Twitter</a></span>
+                </div>
+            </div>
+            <div class="footer_content_developers">
+                <header>CREADORES</header>
+                <div class="footer_developers">
+                    <span>Jaime Daniel Gallegos Garza</span>
+                    <span>Joel Abshalom Castañeda Luna</span>
+                    <span>Roberto Carlos Escobedo Rodriguez</span>
+                    <span>Brayan Alejandro Castillo Alanis</span>
+                </div>
+                <div>
+                    <span>Kevin Orlando Guzmán Reyes</span>
+                    <span>Regina De la Rosa Macías</span>
+                    <span>Sergio Daniel Cruz Martinez</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer_more">
+            <span><a href="mapaSitio.html">Mapa de sitio</a></span>
+        </div>
     </footer>
 </body>
+<script src="scripts/chatbot.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 </html>

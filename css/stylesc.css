@@ -1,0 +1,31 @@
+/*Acomodar la barra de navegación*/
+.nav_comentarios{
+    margin-top: -48px;
+}
+.table_list{
+    margin-top: 60px;
+}
+
+textarea{
+    resize: none;
+}
+
+label{
+    color: gray;
+}
+
+h2{
+    text-align: center;
+}
+
+tbody{
+    text-align: center;
+}
+
+#tablacomentarios{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
