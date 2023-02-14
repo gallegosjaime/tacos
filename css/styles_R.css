@@ -1,0 +1,36 @@
+:root{
+    /*Colores*/
+    --Durazno: blanchedalmond;
+    --AmarilloPastel: #f5fac1;
+    --VerdeMilitar: #71711d;
+}
+.mapa{
+    padding-top: 70px;
+    height: 400px;
+}
+.mapa div{
+    float: left;
+    width: 240px;
+    height: 200px;
+    padding: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.116);
+    margin: 0px 10px 0px 10px;
+}
+.mapa div span:first-child{
+    font-size: 23px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.mapa div span{
+    display: block;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.mapa h1{
+    margin-left: 20px;
+}
+a, ul{
+    list-style: none;
+    color: black;
+    text-decoration: underline;
+}

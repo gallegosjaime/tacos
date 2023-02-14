@@ -1,23 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <Link rel="stylesheet" href="../css/styles.css"></Link>
+    <title>Formulario</title>
+    <meta charset="utf-8">
+    <link type="text/css" href="../css/estilos.css" rel="stylesheet" />
+    <link type="text/css" href="../css/styles.css" rel="stylesheet" />
 </head>
+ 
 <body>
     <nav>
-        <span><a href="../index.html">LOGO</a></span>
-        <div>
-            <ul>
-                <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
-                <li><a href="comentarios.html">Comentarios</a></li>
-            </ul>
-        </div>
-        <span><a href="promociones.html">Promociones</a></span>
-        <span class="login"><a href="login.html">Iniciar Sesión</a></span>
+        <a href="../index.html"><img class="logo" src="../images/logo.jpg"></a>
+        <span class="about"><a href="../pages/sobreNosotros.html">Sobre nosotros</a></span>
+        <span><a href="../pages/comentarios.html">Comentarios</a></span>
+        <span class="login"><a href="../pages/login.html">Iniciar Sesión</a></span>
     </nav>
+    <div id="registrar">
+            <a href="../index.php">Regresar</a>
+    </div>
+    <div id="envoltura">
+        <div id="contenedor">
+ 
+            <div id="cuerpo">
+ 
+                <form id="form-login" action="../index.html" method="post" >
+                    <p><label for="nombre">Nombre:</label></p>
+                        <input name="nombre" type="text" id="nombre" class="nombre" placeholder="Pon tu nombre" autofocus=""/ ></p>
+ 
+                    <!--=============================================================================================-->
+                    <!--La sisguientes 2 líneas son para agregar campos al formulario con sus respectivos labels-->
+                    <!--Puedes usar tantas como necesites-->
+                    <p><label for="apellidos">Apellidos:</label></p>
+                        <input name="apellidos" type="text" id="apellidos" class="apellidos" placeholder="Pon tus apellidos" /></p>
+                    <!--=============================================================================================-->
+ 
+                    <p><label for="correo">Correo:</label></p>
+                        <input name="correo" type="text" id="correo" class="correo" placeholder="Pon tu mail" /></p>
+ 
+                    <p><label for="pass">Contraseña:</label></p>
+                        <input name="pass" type="password" id="pass" class="pass" placeholder="Pon tu contraseña"/ ></p>
+ 
+                    <p><label for="repass">Repetir Contraseña:</label></p>
+                        <input name="repass" type="password" id="repass" class="repass" placeholder="Repite contraseña" /></p>
+ 
+                    <p id="bot"><input name="submit" type="submit" id="boton" value="Registrar" class="boton"/></p>
+                </form>
+            </div>
+ 
+    
+        </div><!-- fin contenedor -->
+ 
+    </div>
 </body>
+ 
 </html>

@@ -4,6 +4,103 @@
     --AmarilloPastel: #f5fac1;
     --VerdeMilitar: #71711d;
 }
+.chatbot_container{
+    z-index: 99;
+    overflow: hidden;
+    position: fixed;
+    height: 400px;
+    width: 300px;
+    right: 1%;
+    bottom: 0;
+    background-color: white;
+    border: 1px solid var(--VerdeMilitar);
+}
+.chatbot_container header{
+    background-color: var(--AmarilloPastel);
+    cursor: pointer;
+    padding: 14px 0px 14px 10px;
+    font-size: 20px;
+    border-bottom: 1px solid var(--VerdeMilitar);
+}
+.chatbot_hide{
+    width:20px;
+    float: right;
+    margin-right: 10px;
+}
+.chatbot_icon{
+    position: absolute;
+    width: 31px;
+    margin: 0px 0px 0px 0px;
+}
+.chatbot_container header span{
+    margin-left: 40px;
+}
+.chatbot{
+    padding: 10px 10px 10px 10px;
+    height: 60%;    
+    overflow: hidden;
+    overflow-y: scroll;
+    display: block;
+}
+.chatbot_howtoanswer{
+    padding: 10px 0px 10px 10px;
+    background-color: rgb(244, 244, 244);
+}
+.chatbot_bot_ans{
+    width: 80%;
+    padding: 10px 0px 10px 10px;
+    border-radius: 6px;
+    background-color: var(--Durazno);
+    margin-bottom: 20px;
+    float: left;
+    clear: left;
+}
+.chatbot div span{
+    display: block;
+    margin-bottom: 2px;
+}
+.chatbot_user_ans{
+    padding: 10px 20px 10px 20px;
+    border-radius: 6px;
+    background-color: var(--Durazno);
+    margin-bottom: 20px;
+    float: right;
+    clear: right;
+}
+
+/*Enviar msg chatbot*/
+
+.chatbot_send{
+    position: absolute;
+    background-color: rgb(238, 238, 238);
+    border-top: 1px solid var(--VerdeMilitar);
+    width: 100%;
+    bottom: 0%;
+    padding: 10px 0px 10px 15px;
+}
+.chatbot_send input:focus{
+    outline: 1px solid var(--VerdeMilitar);
+}
+.chatbot_send input{
+    width: 220px;
+    height: 25px;
+    font-size: 18px;
+    padding-left: 10px;
+    border: 1px solid var(--VerdeMilitar);
+}
+.chatbot_send button{
+    padding: 0px 8px 0px 8px;
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 10px;
+    color: var(--VerdeMilitar);
+    cursor: pointer;
+    background-color: var(--Durazno);
+    border: 2px solid var(--VerdeMilitar);
+}
+.chatbot_send button:active{
+    border-color: white;
+}
 
 body{
     margin: 0;
@@ -14,30 +111,35 @@ nav{
     width: 100%;
     height: 60px;
     position:fixed;
+    font-size: 18px;
+    z-index: 99;
+    font-family:Georgia;
+}
+.about{
+    margin-left: 80px;
 }
 nav span{
-    margin-left: 10px;
-    padding: 20px;
-    margin: auto;
+    float: left;
+    padding: 20px 10px 20px 10px;
 }
-nav div{
-    display: inline-block;
+nav img {
+    position: absolute;
+    left: 10px;
+    top:7px;
 }
-a, ul{
+nav a{
     list-style: none;
     color: black;
     text-decoration: none;
-
 }
 .logo{
     width: 60px;
 }
 .login{
     float: right;
-    margin: auto;
+    
     padding: 20px;
 }
-
 .slider{
     width: 100%;
     height: 91vh;
@@ -62,12 +164,66 @@ a, ul{
     margin-bottom: 30px;
 }
 footer{
+    width:100%;
+    height: 250px;
+    background-color:rgb(46, 45, 0);
+    color: white;
+}
+.footer_content{
     width: 100%;
     height: 200px;
-    background-color:#71711d;
-
+    background-color: var(--VerdeMilitar);
+    padding-left: 50px;
 }
-footer span{
-    display: block;
+.footer_content_box{
+    width: 260px;
+    float: left;
+    margin-right: 50px;
+}
+.footer_content_box div{
+    margin-left: 40px;
+}
+.footer_content_box a{
+    color: white;
+    text-decoration: none;
+}
+.footer_content_box a:hover{
+    text-decoration: underline;
+}
+footer img{
+    width: 25px;
+    margin-right: 10px;
+}
+footer header{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0px 10px 0;
+}
+.footer_developers{
+    margin-right: 50px;
+    float: left;
+}
+.footer_content_developers{
+    width: 550px;
+    float: left;
+    margin-right: 50px;
+}
+.footer_content span{
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+}
+.footer_more{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.footer_more span{
+    margin: auto;
+    padding: 15px 0px 0px 0px;
+}
+.footer_more a{
     color: white;
 }
