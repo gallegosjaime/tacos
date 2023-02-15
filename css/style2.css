@@ -125,16 +125,16 @@ body{
   }
   
   ul.slider li:first-child {
-      opacity: 1; /*Mostramos el primer <li>*/
+      opacity: 1; 
   }
   
   ul.slider li:target {
-      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+      opacity: 1; 
   }
   
   .menu{
     text-align: center;
-    margin: 20px;
+    margin: 25px;
   }
   
   .menu li{
@@ -157,9 +157,9 @@ body{
   .centrado{
     position: absolute;
     top: 104%;
-    left: 25%;
+    left: 15%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 30px;
     -webkit-text-fill-color: white;
     -webkit-text-stroke: 1px black;
     background-color: gray;
@@ -167,9 +167,9 @@ body{
 .centrado2{
     position: absolute;
     top: 112%;
-    left: 25%;
+    left: 18%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 30px;
     -webkit-text-fill-color: white;
     -webkit-text-stroke: 1px black;
     background-color: gray;
