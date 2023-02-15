@@ -1,0 +1,64 @@
+.wpp{
+    position: relative;
+    width: 50px;
+    left: 600px;
+    top: 350px;
+    transition: all 500ms ease; 
+}
+.wpp:hover{
+	transform: translateY(-25%);
+}
+.text{
+    position: relative;
+    top: 300px;
+    left: 510px;
+    top: 350px;
+}
+
+.orden{
+   position: relative;
+   left: 510px;
+   top: 300px;
+}
+
+.lema{
+    position: relative;
+    left: 310px;
+    top:200px;
+}
+
+.btn1{
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    border-radius: 14px;
+    border:none;
+    background-color: yellowgreen;
+    bottom: 20px;
+}
+
+.btn1:hover{
+    background-color: #a8a834;
+}
+
+.lg{
+    position: relative;
+    top: 90px;
+    left: 100px;
+    margin-left: auto;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color:#71711d;
+
+}
+footer span{
+    display: block;
+    color: white;
+}
+
+.footer_pickup{
+    margin-top: 400px;
+}
