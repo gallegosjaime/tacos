@@ -1,30 +1,37 @@
 .wpp{
     position: relative;
     width: 50px;
+    top: 180px;
     left: 600px;
-    top: 350px;
+    margin: auto;
     transition: all 500ms ease; 
+}
+.separador{
+    padding-top: 60px;
 }
 .wpp:hover{
 	transform: translateY(-25%);
 }
+
 .text{
     position: relative;
-    top: 300px;
-    left: 510px;
-    top: 350px;
+    text-align: center;
+    margin: auto;
+    top: 80px;
 }
 
 .orden{
    position: relative;
-   left: 510px;
-   top: 300px;
+   text-align: center;
+   margin: auto;
+   top: 80px;
 }
 
 .lema{
     position: relative;
-    left: 310px;
-    top:200px;
+    text-align: center;
+    margin: auto;
+    top: 80px;
 }
 
 .btn1{
@@ -42,23 +49,16 @@
 }
 
 .lg{
+    margin: auto;
+}
+
+.dl{
     position: relative;
-    top: 90px;
-    left: 100px;
-    margin-left: auto;
-}
-
-footer{
-    width: 100%;
-    height: 200px;
-    background-color:#71711d;
-
-}
-footer span{
-    display: block;
-    color: white;
+    width: 110px;
+    height: 95px;
+    top: 215px;
 }
 
 .footer_pickup{
-    margin-top: 400px;
+    margin-top: 300px;
 }

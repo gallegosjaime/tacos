@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre Nosotros</title>
+    <link rel="shortcut icon" href="../images/tc.png">
     <Link rel="stylesheet" href="../css/styles.css"></Link>
     <Link rel="stylesheet" href="../css/style2.css"></Link>
 </head>
@@ -18,7 +19,25 @@
             <span class="login"><a href="../pages/login.html">Iniciar Sesión</a></span>
         </nav>
     </div>
-
+    <div class="chatbot_container" id="ct_container" >
+        <header onclick="hide()" title="Minimizar chatbot">
+            <img class="chatbot_icon" src="../images/chatbot_icon.png"><span>Chatbot</span><img class="chatbot_hide" id="close_chatbot" src="../images/down_icon.png">
+        </header>
+        <div class="chatbot_howtoanswer" >
+            <span>Escribe <span id="cb_wta">el número</span> para reponder</span>
+        </div>
+        <div class="chatbot" id="chatbot">
+            <div class="chatbot_bot_ans">
+                <span>¿Hola en qué puedo ayudarte?</span>
+                <span>1.- Dudas generales</span>
+                <span>2.- Dudas de compra</span>
+                <span>3.- Formas de contacto</span>
+            </div>
+        </div>
+        <div class="chatbot_send" id="ct_send">
+            <input type="text" id="chatbot_msgsent"><button onclick="chatbot_send()">></button>
+        </div>
+    </div>
     <div class="size">
         <h1>Sobre nosotros</h1>
         <div class="box">
@@ -95,4 +114,6 @@
         </div>
     </footer>
 </body>
+<script src="../scripts/chatbot.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 </html>
