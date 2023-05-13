@@ -4,6 +4,9 @@
     --AmarilloPastel: #f5fac1;
     --VerdeMilitar: #71711d;
 }
+.pedido{
+    display: none;
+}
 .chatbot_container{
     z-index: 99;
     overflow: hidden;

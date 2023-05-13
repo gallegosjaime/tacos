@@ -1,16 +1,17 @@
 var formulario = document.getElementById("#formulario");
 document.addEventListener('submit', validarFormulario);
+
+const form = document.querySelector('#formulario');
+
+
 var counterVal = 0;
 
 //Evento de Validación de Formulario
-function validarFormulario(e){
+form.addEventListener('submit', ()=> {
     e.preventDefault();
-
-
     var Id = document.getElementById('btn').value = ++counterVal; //se obtiene el valor del input, y se incrementa en 1 el valor que tenga.
-
-    var usuario = document.getElementById("usuario").value
-    var comentario = document.getElementById("comentario").value
+    var usuario = document.getElementById("usuario").value;
+    var comentario = document.getElementById("comentario").value;
     valorActivo = document.querySelector('input[name="status"]:checked').value;
 
     //Para ver fecha y hora
@@ -29,10 +30,4 @@ function validarFormulario(e){
     var btn = document.createElement("tr");
     btn.innerHTML=fila;
     document.getElementById("tablita").appendChild(btn);
-
-}
-
-
-function redireccion() {
-    location.href="lista.html";  
-}
+});

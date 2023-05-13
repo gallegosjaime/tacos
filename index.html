@@ -14,6 +14,7 @@
         <a href="index.html"><img class="logo" src="images/logo.png"></a>
         <span class="about"><a href="pages/sobreNosotros.html">Sobre nosotros</a></span>
         <span><a href="pages/comentarios.html">Comentarios</a></span>
+        <span class="pedido"><a href="../pages/pickup.html">Hacer Pedido</a></span>
         <span class="login"><a href="pages/login.html">Iniciar Sesión</a></span>
     </nav>
     <div class="chatbot_container" id="ct_container" >
@@ -173,4 +174,30 @@
 </body>
 <script src="scripts/chatbot.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<!-- FIREBASE SCRIPTS -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword,  signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBl8wo01fT5WJBODmW65ZuPhOug4v47GEs",
+    authDomain: "finanzas-test.firebaseapp.com",
+    databaseURL: "https://finanzas-test-default-rtdb.firebaseio.com",
+    projectId: "finanzas-test",
+    storageBucket: "finanzas-test.appspot.com",
+    messagingSenderId: "583931976121",
+    appId: "1:583931976121:web:02d6d596cbcf4fa0b7fe68"
+  };
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const Auth = getAuth();
+  signInWithEmailAndPassword(Auth,"gg@gmail.com", "123456").then((userRecords) => {
+    document.querySelector(".login a").innerHTML="Jaime";
+    document.querySelector(".pedido").style.display="block";
+  }).catch((error) => console.log(error));
+</script>
 </html>

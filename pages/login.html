@@ -22,7 +22,7 @@
             </div>
  
             <div id="cuerpo">
-                <form id="form-login" action="" method="post" autocomplete="off">
+                <form id="form-login" action="" method="post" autocomplete="off" onsubmit="return false">
                     <!--A saber, el atributo for funciona como el id.-->
                     <!--ejemplo <label for="usuario">Usuario:</label>-->
                     <!--required es nuevo en html5, si el campo está vacío te avisa, pero cuidado, no valida la información-->
@@ -43,3 +43,38 @@
 </body>
  
 </html>
+
+<!-- FIREBASE SCRIPTS -->
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword,  signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBl8wo01fT5WJBODmW65ZuPhOug4v47GEs",
+      authDomain: "finanzas-test.firebaseapp.com",
+      databaseURL: "https://finanzas-test-default-rtdb.firebaseio.com",
+      projectId: "finanzas-test",
+      storageBucket: "finanzas-test.appspot.com",
+      messagingSenderId: "583931976121",
+      appId: "1:583931976121:web:02d6d596cbcf4fa0b7fe68"
+    };
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    var login = document.querySelector("#form-login");
+    login.addEventListener('submit', ()=> {
+        const Auth = getAuth();
+    const Email = document.querySelector('#usuario').value;
+    const Password = document.querySelector('#contrasenia').value;
+    signInWithEmailAndPassword(Auth,Email, Password).then((userRecords) => {
+        location.href="../index.html";
+    }).catch((error) => alert("usuario/contraseña incorrectos"));
+    })
+  </script>
+
+  <!-- CUSTOM CODE -->
+  <script src="main.js"></script>
