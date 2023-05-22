@@ -14,19 +14,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
+<?php $ASSETS_PATH = $_SERVER["DOCUMENT_ROOT"]."/tacos/assets/templates/";?>
 <body>
     <nav>
-        <a href="../index.html"><img class="logo" src="../images/logo.png"></a>
-        <span class="about"><a href="../pages/sobreNosotros.html">Sobre nosotros</a></span>
-        <span><a href="../pages/comentarios.html">Comentarios</a></span>
-        <span class="pedido"><a href="../pages/pickup.html">Hacer Pedido</a></span>
-        <span class="login"><a href="../pages/login.html">Iniciar Sesión</a></span>
+        <?php include ($ASSETS_PATH.'menu.php');?>
     </nav>
     <div class="container">
         <img src="../images/error1.png" alt="">
         <h1>La página que ha solicitado no se encuentra disponible</h1>
         <div class="boton">
-            <button><a href="../index.html">Volver atras</a></button>
+            <button><a href="../index.php">Volver atras</a></button>
         </div>
     </div>
 </body>

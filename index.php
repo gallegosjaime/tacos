@@ -10,33 +10,13 @@
     <Link rel="stylesheet" href="css/style2.css"></Link>
 </head>
 <body>
-    <nav>
-        <a href="index.html"><img class="logo" src="images/logo.png"></a>
-        <span class="about"><a href="pages/sobreNosotros.html">Sobre nosotros</a></span>
-        <span><a href="pages/comentarios.html">Comentarios</a></span>
-        <span class="pedido"><a href="../pages/pickup.html">Hacer Pedido</a></span>
-        <span class="login"><a href="pages/login.html">Iniciar Sesión</a></span>
+    <nav id="menu">
+      <?php  $ASSETS_PATH = $_SERVER["DOCUMENT_ROOT"]."/tacos/assets/templates/";?>
+      <?php include ($ASSETS_PATH.'menu.php');?>
     </nav>
     <div class="chatbot_container" id="ct_container" >
-        <header onclick="hide()" title="Minimizar chatbot">
-            <img class="chatbot_icon" src="images/chatbot_icon.png"><span>Chatbot</span><img class="chatbot_hide" id="close_chatbot" src="images/down_icon.png">
-        </header>
-        <div class="chatbot_howtoanswer" >
-            <span>Escribe <span id="cb_wta">el número</span> para reponder</span>
-        </div>
-        <div class="chatbot" id="chatbot">
-            <div class="chatbot_bot_ans">
-                <span>¿Hola en qué puedo ayudarte?</span>
-                <span>1.- Dudas generales</span>
-                <span>2.- Dudas de compra</span>
-                <span>3.- Formas de contacto</span>
-            </div>
-        </div>
-        <div class="chatbot_send" id="ct_send">
-            <input type="text" id="chatbot_msgsent"><button onclick="chatbot_send()">></button>
-        </div>
+      <?php include ($ASSETS_PATH.'chatbot.php');?>
     </div>
-
     <div style="align-items: center; padding-top: 80px;">
         <div class="container">
             <ul class="slider">
@@ -135,45 +115,11 @@
           </section>
     </div>
     <footer>
-        <div class="footer_content">
-            <div class="footer_content_box">
-                <header>CONTACTO</header>
-                <div>
-                    <span><img src="images/email_icon.png" alt="">sample@sample.com</span>
-                    <span><img src="images/phone_icon.png" alt="">81123456789</span>
-                    <span><img src="images/phone_icon.png" alt="">81323456429</span>
-                </div>
-            </div>
-            <div class="footer_content_box">
-                <header>REDES SOCIALES</header>
-                <div>
-                    <span><img src="images/facebook_icon.png" alt=""><a href="https://www.facebook.com/">Facebook</a></span>
-                    <span><img src="images/instagram_icon.png" alt=""><a href="https://www.instagram.com/">Instagram</a></span>
-                    <span><img src="images/twitter_icon.png" alt=""><a href="https://twitter.com/">Twitter</a></span>
-                </div>
-            </div>
-            <div class="footer_content_developers">
-                <header>CREADORES</header>
-                <div class="footer_developers">
-                    <span>Jaime Daniel Gallegos Garza</span>
-                    <span>Joel Abshalom Castañeda Luna</span>
-                    <span>Roberto Carlos Escobedo Rodriguez</span>
-                    <span>Brayan Alejandro Castillo Alanis</span>
-                </div>
-                <div>
-                    <span>Kevin Orlando Guzmán Reyes</span>
-                    <span>Regina De la Rosa Macías</span>
-                    <span>Sergio Daniel Cruz Martinez</span>
-                </div>
-            </div>
-        </div>
-        <div class="footer_more">
-            <span><a href="pages/mapaSitio.html">Mapa de sitio</a></span>
-        </div>
+      <?php include ($ASSETS_PATH.'footer.php');?>
     </footer>
 </body>
+<script src="libraries/jquery.js"></script>
 <script src="scripts/chatbot.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 <!-- FIREBASE SCRIPTS -->
 <script type="module">
   // Import the functions you need from the SDKs you need
@@ -200,4 +146,5 @@
     document.querySelector(".pedido").style.display="block";
   }).catch((error) => console.log(error));
 </script>
+
 </html>
