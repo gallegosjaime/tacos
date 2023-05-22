@@ -7,13 +7,10 @@
     <link type="text/css" href="../css/styles.css" rel="stylesheet" />
     <link rel="shortcut icon" href="../images/tc.png">
 </head>
- 
+<?php $ASSETS_PATH = $_SERVER["DOCUMENT_ROOT"]."/tacos/assets/templates/";?>
 <body>
     <nav>
-        <a href="../index.html"><img class="logo" src="../images/logo.png"></a>
-        <span class="about"><a href="../pages/sobreNosotros.html">Sobre nosotros</a></span>
-        <span><a href="../pages/comentarios.html">Comentarios</a></span>
-        <span class="login"><a href="../pages/login.html">Iniciar Sesión</a></span>
+        <?php include ($ASSETS_PATH.'menu.php');?>
     </nav>
     <div id="envoltura">
         <div id="contenedor">

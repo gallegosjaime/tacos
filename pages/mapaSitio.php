@@ -9,13 +9,10 @@
     <Link rel="stylesheet" href="../css/styles.css"></Link>
     <Link rel="stylesheet" href="../css/styles_R.css"></Link>
 </head>
+<?php $ASSETS_PATH = $_SERVER["DOCUMENT_ROOT"]."/tacos/assets/templates/";?>
 <body>
     <nav>
-        <a href="../index.html"><img class="logo" src="../images/logo.png"></a>
-        <span class="about"><a href="../pages/sobreNosotros.html">Sobre nosotros</a></span>
-        <span><a href="../pages/comentarios.html">Comentarios</a></span>
-        <span class="pedido"><a href="../pages/pickup.html">Hacer Pedido</a></span>
-        <span class="login"><a href="../pages/login.html">Iniciar Sesión</a></span>
+        <?php include ($ASSETS_PATH.'menu.php');?>
     </nav>
     <div class="mapa">
         <h1>Categorias</h1>
@@ -42,41 +39,7 @@
         </ul>
     </div>
     <footer>
-        <div class="footer_content">
-            <div class="footer_content_box">
-                <header>CONTACTO</header>
-                <div>
-                    <span><img src="images/email_icon.png" alt="">sample@sample.com</span>
-                    <span><img src="images/phone_icon.png" alt="">81123456789</span>
-                    <span><img src="images/phone_icon.png" alt="">81323456429</span>
-                </div>
-            </div>
-            <div class="footer_content_box">
-                <header>REDES SOCIALES</header>
-                <div>
-                    <span><img src="images/facebook_icon.png" alt=""><a href="https://www.facebook.com/">Facebook</a></span>
-                    <span><img src="images/instagram_icon.png" alt=""><a href="https://www.instagram.com/">Instagram</a></span>
-                    <span><img src="images/twitter_icon.png" alt=""><a href="https://twitter.com/">Twitter</a></span>
-                </div>
-            </div>
-            <div class="footer_content_developers">
-                <header>CREADORES</header>
-                <div class="footer_developers">
-                    <span>Jaime Daniel Gallegos Garza</span>
-                    <span>Joel Abshalom Castañeda Luna</span>
-                    <span>Roberto Carlos Escobedo Rodriguez</span>
-                    <span>Brayan Alejandro Castillo Alanis</span>
-                </div>
-                <div>
-                    <span>Kevin Orlando Guzmán Reyes</span>
-                    <span>Regina De la Rosa Macías</span>
-                    <span>Sergio Daniel Cruz Martinez</span>
-                </div>
-            </div>
-        </div>
-        <div class="footer_more">
-            <span><a href="mapaSitio.html">Mapa de sitio</a></span>
-        </div>
+        <?php include ($ASSETS_PATH.'footer.php');?>
     </footer>
 </body>
 <script type="module">
