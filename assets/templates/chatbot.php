@@ -1,4 +1,5 @@
 <?php
+//Definir las URL de donde se encuentran las imagenes
 define('CHATBOT_IMAGES_URL', "http://localhost/tacos/images/");
 ?>
 

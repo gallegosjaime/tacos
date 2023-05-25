@@ -1,0 +1,11 @@
+V1.1
++ Convertido a PHP
+
++ Código HTML de la barra de navegación ahora es un archivo único y se carga en todas las páginas
++ Código HTML del pie de página ahora es un archivo único y se carga en todas las páginas
++ Código HTML del chatbot ahora es un archivo único y se carga en todas las páginas
++ Pagina de error ahora se muestra si ingresas mal la URL
+
+V1.11
+
++ Navbar hover
