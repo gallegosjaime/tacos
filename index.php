@@ -33,7 +33,6 @@
                 <img src="images/bistec.jpg"/>
                 <div class="centrado">Orden de bistec a mitad de</div>
                 <div class="centrado2">precio todos los miercoles</div>
-
               </li>
             </ul>
             <ul class="menu">
@@ -47,7 +46,6 @@
                 <a href="#slide3">3</a>
               </li>
             </ul>
-            
           </div>
     </div>
     <div>
@@ -118,9 +116,11 @@
       <?php include ($ASSETS_PATH.'footer.php');?>
     </footer>
 </body>
-<script src="libraries/jquery.js"></script>
+<script src="assets/libraries/jquery.js"></script>
 <script src="scripts/chatbot.js"></script>
-<!-- FIREBASE SCRIPTS -->
+<script src="firebase/login.js" type="module"></script>
+
+<!-- FIREBASE SCRIPTS 
 <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
@@ -146,5 +146,5 @@
     document.querySelector(".pedido").style.display="block";
   }).catch((error) => console.log(error));
 </script>
-
+-->
 </html>

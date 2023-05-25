@@ -62,7 +62,7 @@
         <?php include($ASSETS_PATH."footer.php");?>
     </footer>
 </body>
-<script src="../libraries/jquery.js"></script>
+<script src="../assets/libraries/jquery.js"></script>
 <script src="../scripts/chatbot.js"></script>
 <script type="module">
     // Import the functions you need from the SDKs you need

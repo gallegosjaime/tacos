@@ -1,4 +1,5 @@
 <?php
+//Definir las URL de donde se encuentran las imagenes
 define('MAP_URL', 'http://localhost/tacos/assets/templates/mapaSitio.php');
 define('FOOTER_IMAGES_URL', "http://localhost/tacos/images/");
 ?>
